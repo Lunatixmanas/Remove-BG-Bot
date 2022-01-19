@@ -13,30 +13,40 @@ Bot = Client(
     api_hash=os.environ.get("API_HASH")
 )
 
-START_TEXT = """Hello {},
-I am a media background remover bot. Send me a photo I will send the photo without background.
+START_TEXT = """
+<b>𝗛𝗜 {}, 𝗜 𝗔𝗠 𝗔 𝗕𝗚 𝗥𝗘𝗠𝗢𝗩𝗘𝗥 𝗕𝗢𝗧 𝗜 𝗖𝗔𝗡 𝗘𝗔𝗦𝗜𝗟𝗬 𝗥𝗘𝗠𝗢𝗩𝗘 𝗕𝗔𝗖𝗞𝗚𝗥𝗢𝗨𝗡𝗗 𝗢𝗙 𝗧𝗛𝗘 𝗣𝗜𝗖𝗧𝗨𝗥𝗘𝗦</b>
 
-Made by @FayasNoushad"""
+<b>𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗔𝗡𝗗 𝗠𝗔𝗧𝗜𝗡𝗔𝗘𝗗 𝗕𝗬 @KOT_FREE_DE_LA_HOYA_OFF</b>"""
 HELP_TEXT = """**More Help**
 
-- Just send me a photo
-- I will download it
-- I will send the photo without background
+<b>- Jᴜsᴛ Sᴇɴᴅ Mᴇ ᴀ Pʜᴏᴛᴏ</b></b>
+<b>- I Wɪʟʟ Dᴏᴡɴʟᴏᴀᴅ Iᴛ
+<b>- I Wɪʟʟ Sᴇɴᴅ Tʜᴇ Pʜᴏᴛᴏ Wɪᴛʜᴏᴜᴛ Bᴀᴄᴋɢʀᴏᴜɴᴅ</b>
 
-Made by @FayasNoushad"""
-ABOUT_TEXT = """**About Me**
-
-- **Bot :** `Backround Remover Bot`
-- **Creator :** [Fayas](https://telegram.me/TheFayas)
-- **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
-- **Source :** [Click here](https://github.com/FayasNoushad/Remove-BG-Bot/tree/main)
-- **Language :** [Python3](https://python.org)
-- **Library :** [Pyrogram](https://pyrogram.org)"""
+<b>𝗕𝗢𝗧 𝗖𝗥𝗘𝗔𝗧𝗘𝗗 𝗔𝗡𝗗 𝗠𝗔𝗧𝗜𝗡𝗔𝗘𝗗 𝗕𝗬 @KOT_FREE_DE_LA_HOYA_OFF</b>"""
+ABOUT_TEXT = """
+╭──────[@KOT_BOTS]───────〄
+│
+├ Nᴀᴍᴇ : <a href='https://t.me/KOT_BG_REMOVER_BOT'>Kᴏᴛ Bɢ Rᴇᴍᴏᴠᴇʀ Bᴏᴛ</a>
+│
+├ Sᴇʀᴠᴇʀ : <a href='https://heroku.com/'>Hᴇʀᴏᴋᴜ</a>
+│ 
+├ Lᴀɴɢᴜᴀɢᴇ : <a href='https://docs.pyrogram.org/'>Pʏᴛʜᴏɴ 3.9.6</a>
+│
+├ Vᴇʀꜱɪᴏɴ : <a href='https://t.me/KOT_BG_REMOVER_BOT</a>
+│
+├ Fʀᴀᴍᴇᴡᴏʀᴋ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ 1.2.9</a>
+│
+├ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/KOT_FREE_DE_LA_HOYA_OFF'>✯°• Kᴏᴛ Fʀᴇᴇ Dᴇ Lᴀ Hᴏʏᴀ Oғғ °•✯ | ✪ Bᴏᴛs CʀᴇᴀᴛᴏR ✪</a>
+│
+├ Pᴏᴡᴇʀᴇᴅ Bʏ : <a href='https://t.me/KOT_LINKS_TEAM'>Kᴏᴛ Lɪɴᴋs Tᴇᴀᴍ</a>
+│
+├ Uᴘᴅᴀᴛᴇᴅ Oɴ : [ 19.1.2022 ] 03.00 PM"""
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('Channel', url='https://telegram.me/FayasNoushad'),
-            InlineKeyboardButton('Feedback', url='https://telegram.me/TheFayas')
+            InlineKeyboardButton('BOTS CHANNEL', url='https://telegram.me/KOT_BOTS'),
+            InlineKeyboardButton('SUPPORT GROUP', url='https://telegram.me/KOT_REPORS')
         ],
         [
             InlineKeyboardButton('Help', callback_data='help'),
@@ -74,7 +84,7 @@ ERROR_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton('Join Updates Channel', url='https://telegram.me/FayasNoushad')
+            InlineKeyboardButton('Join Updates Channel', url='https://telegram.me/KOT_BOTS')
         ]
     ]
 )
